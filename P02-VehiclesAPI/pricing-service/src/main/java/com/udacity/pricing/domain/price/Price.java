@@ -12,6 +12,8 @@ public class Price {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long vehicleId;
     private String currency;
+
+    @Column(name = "PRICE")
     private BigDecimal priceValue;
 
     public Price() {
